@@ -1,0 +1,24 @@
+THANK YOU FOR DOWNLOADING BECONTENT. 
+
+INSTALLATION INSTRUCTION
+************************
+
+To install your beContent website is very easy, first at all you need 
+the following
+
+	* PHP4.*
+	* MySQL
+	
+then you need to 
+
+1. create a MySQL database.
+
+2. Customize the database information in the "include/config.inc.php" 
+   configuration file. Please note, you may provide more than one host 
+   installation, for instance your development and deployment hosts, 
+   respectively.
+   
+3. Provide the administrator information.
+
+Enjoy.
+   

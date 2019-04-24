@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- Type your own page title here -->
+	<title>beContent</title>
+	<link rel="stylesheet" type="text/css" href="skins/lightcorner/css/default.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="skins/lightcorner/css/dark.css" /> -->
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="skins/lightcornercss/ie.css"/>
+	<![endif]-->
+	<script type="text/javascript" src="skins/lightcorner/js/jquery.js"></script>
+	<script type="text/javascript" src="skins/lightcorner/js/easySlider1.5.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, /* replace true by false if you don't want to slide your images automaticaly */
+				pause: 5000 /* -- in miliseconds */
+			});
+		});	
+	</script>	
+</head>
+<body id="<[class]>">
+	<div id="body">
+		<div id="top">
+		    <!-- Logo | Paste your own logo here (in transparent .png format)-->
+			<img src="skins/lightcorner/imgs/light/logo.png" alt="LightCorners" class="logo"/>
+			<!-- Navigation -->
+			<div id="navigation">
+				<!--<ul>
+					<li class="current"><a href="index.htm" title="Homepage"><span>home</span></a></li>
+					<li><a href="services.htm" title="What we offer to you"><span>services</span></a></li>
+					<li><a href="portfolio.htm" title="Our portfolio"><span>portfolio</span></a></li>
+					<li><a href="about.htm" title="Some informations about us"><span>about</span></a></li>
+					<li><a href="contact.htm" title="Contact us"><span>contact</span></a></li>
+					<li class="rss"><a href="" title="RSS feed"></a></li>
+				</ul>-->
+				<[header::menu parent="1" pre="<span>" post="</span>" library="hiermenu"]>
+			</div>			
+		</div>
+		<[body]>
+		<div id="footer">
+			<div class="left">Copyright LIGHTcorners 2009</div>
+			<div class="right">
+				<ul class="footer-navigation">
+					<li><a href="">HOME</a></li>
+					<li><a href="">PORTFOLIO</a></li>
+					<li><a href="">SERVICES</a></li>
+					<li><a href="">ABOUT</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

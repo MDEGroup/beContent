@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<base href="http://<[server]>/<[base]>/">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title><[title]></title>
+<link rel="stylesheet" media="screen" href="skins/<[skin]>/css/main2.css" type="text/css"/>
+<link rel="stylesheet" media="print" href="skins/<[skin]>/css/print.css" type="text/css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/CSS" href="skins/<[skin]>/css/ie6fix.css"> <![endif]-->
+<!--[if IE 5]> <link rel="stylesheet" type="text/CSS" href="skins/<[skin]>/css/ie6fix.css"> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/CSS" href="skins/<[skin]>/css/ie7fix.css"> <![endif]-->
+<[javascript]>
+<[head]>
+</head>
+<body>
+<!-- Message Window -->
+<div id="messagebox">
+   <table cellpadding=0 cellspacing=0>
+   <tr>
+   <td class="ulcorner"></td>
+   <td class="uedge">
+      <span class="message_title">Notify</span>
+   </td>
+   <td class="urcorner">
+   </td>
+   </tr>
+   <tr height=0>
+
+   <td class=ledge></td>
+   <td class=roundBox>
+      <div id="message"><[message]></div>
+   </td>
+   <td class=redge></td>
+   </tr>
+   <tr>
+   <td class=ledge></td>
+
+   <td class=roundBox align=right>
+    <a href="javascript:my_closeMessage();"><img border=0 src=img/message_box/close.jpg></a>
+   </td>
+   <td class=redge></td>
+   </tr>
+
+  
+   
+   <tr>
+   <td class="blcorner"></td>
+   <td class="bedge"></td>
+   <td class="brcorner"></td>
+   </tr>
+   </table>
+</div>
+<!-- Message WIndow -->
+
+<script>
+  $(document).ready(function(){
+    $("#dialog").dialog();
+  });
+</script>
+
+<div id="dialog" title="Dialog Title">I'm in a dialog</div>
+
+
+<div id="main">
+  <div id="header">
+  	<div>
+					You are logged as <b><[user.username]></b><br />
+					<br />
+				</div>
+  
+  <!-- <form name="search" action="search.php">
+    <input id="cercabox" type="text" size="17" name="text" />
+    <input type="submit" class="button-medium" value="cerca">
+  </form> -->
+  </div>
+  <div id="bar">
+    <[image::corner mode="round" library="becontentTags"]>
+    <div class="right"><[menu_header::menu parent="30" depth="1" mode="inline" library="hiermenu"]></div>
+  </div>
+  <div id="container">
+    <div id="menu">
+    	<[menu::administrationMenu library="hiermenu"]>	
+    </div>
+
+    <!-- <div id="innerbox">
+      <[tabbed]>
+    </div> -->
+    <div id="body">
+      <[body]>
+    </div>
+    <div id="mainlow">
+    	<[announcement_page_body]>
+    
+    
+    	<!-- <div id="boxes" >
+    		<[box_low]>
+    	</div> 
+    	<div id="photolow">
+      		<div id="photohead">
+        		<h1><[spot_page_subtitle]></h1>
+        		<h2><a href="<[spot_page_link]>"><[spot_page_title]></a></h2>
+      		</div>
+      		<a href="<[spot_page_link]>"><img src="show.php?token=a129a6f8cf7338dd2273d517ca0dd3f8&id=<[spot_page_id]>&width=186&height=143&thumb" alt="fotolow" /></a>
+      		<div class="corner-leftdw">&nbsp;</div>
+      		<div class="corner-rightdw">&nbsp;</div>
+		</div>-->
+  	</div> 
+  </div>
+  
+  <div class="cleaner"></div>
+  <div id="footer">
+    <!-- <div id="utilities"> Terms and Conditions | XHTML/CSS | RSS Feed </div>-->
+    <div id="utilities">Last login: <[user.lastlogin::formatDate mode="EXTENDED_PLUS" library="becontentTags"]></div>
+    <div id="login">
+    	Your latest operations: <a href="logs.php">View</a> | <a href="logout.php">Logout</a>
+    </div>
+    <div class="cleaner"></div>
+    <div id="final">
+      <div class="left"> Copyright &copy; 2002-2009 Dipartimento di Informatica - Università degli Studi dell'Aquila </div>
+      <div class="right"> <a href="http://www.becontent.org"><img src="skins/<[skin]>/img/skin/beContent.png" alt="beContent" /></a> </div>
+    </div>
+  </div>
+  <div class="cleaner"></div>
+</div>
+</body>
+</html>

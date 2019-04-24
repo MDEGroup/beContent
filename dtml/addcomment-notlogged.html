@@ -1,0 +1,24 @@
+<script>
+
+function opencomment() {
+	var obj = document.getElementById('comment-wrap');
+	
+	if (obj.style.visibility == 'visible') {
+		obj.style.visibility = 'hidden';
+		obj.style.height = '0px';
+	} else {
+		obj.style.height = '90px';
+		obj.style.width = '350px';
+		obj.style.visibility = 'visible';
+	}
+}
+
+</script>
+<a class="blog" href="javascript:opencomment();">commenta</a>
+
+<div id="comment-wrap">
+	<a href="javascript:opencomment();"><img src="img/beContent/close.jpg"></a>
+	<div id="comment-notify">
+	<[notify]>
+	</div>
+</div>

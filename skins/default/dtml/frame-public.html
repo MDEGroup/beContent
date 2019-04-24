@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<base href="http://localhost/<[base]>/"><!-- VAI -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Distribution" content="Global" />
+<meta name="Robots" content="index,follow" />
+
+<meta name="Keywords" content="<[keywords]>" />
+<meta name="Description" content="<[description]>" />
+
+<link rel="stylesheet" href="skins/<[skin]>/css/styles.css" type="text/css" />
+		
+<title><[title]></title>
+
+</head>
+
+<body>
+<!-- wrap starts here -->
+<div id="wrap">
+		
+		<!--header -->
+		<div id="header">			
+				<div id="headermenu">
+				
+						<div><a href="page/documentation/6.htm">documentation</a></div>
+						<div><a href="http://code.google.com/p/becontent/downloads/list?id_menu=9">download</a></div>
+						<div><a href="page/licensing/9.htm">licensing</a></div>
+
+						<div><a href="page/impressum/5.htm">impressum</a></div> 
+					
+				</div>
+			 
+						
+				
+		</div>
+		
+		<!-- menu -->	
+		<div  id="menu"></a></div>					
+			
+		<!-- content-wrap starts here -->
+		<div id="content-wrap">
+				
+			<div id="sidebar">
+			
+				<div class="left-box">
+					<form method="POST" action="login.php">
+					<table>
+						<tr>
+							<td>username</td><td><input type="text" name="username" size=12></td>
+						</tr>
+						<tr>
+							<td>password</td><td><input type="password" name="password" size=12></td>
+						</tr>
+						<tr>
+							<td></td><td><input type="submit" value="login"></td>
+						</tr>
+					</table>	
+					</form>
+				</div>
+				<div class="left-box-bottom"></div>
+			
+				<div class="left-box">
+					<[menu::menu library="hiermenu"]>	
+				</div>
+				<div class="left-box-bottom"></div>
+				
+				
+				<div id="rss">
+					<a alt="RSS 2.0 feed" title="RSS 2.0 feed" href="rss.php"><img style="margin-bottom: -3.5px;" src="img/rss/rss2.png"> Subscribe to RSS feed.</a>
+				</div>
+			</div>
+				
+			<div id="main">
+				<div style="padding-left: 4px; padding-top: 6px;"><[id_menu::path library="hiermenu"]></div>
+				<[body]>
+				
+			</div>
+		
+		<!-- content-wrap ends here -->	
+		</div>
+					
+		<!--footer starts here-->
+		<div id="footer">
+			
+			<p><a href="http://www.beContent.org"><img align=center style="border: 0px; padding-bottom: 5px;" src="img/beContent.png"></a> 
+		</div>	
+
+<!-- wrap ends here -->
+</div>
+</body>
+<!-- CUSTOMIZE YOUR ANALYTICS DATA
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-3082454-3";
+urchinTracker();
+</script> -->
+</html>

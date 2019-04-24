@@ -1,0 +1,558 @@
+/********************************************
+   HTML ELEMENTS
+********************************************/ 
+
+/* Top Elements */
+* { margin: 0; padding: 0; }
+
+
+
+body {
+	background: #CCCCCC;
+	font: 70%/1.5em Verdana, Tahoma, arial, sans-serif;
+	color: #333; 
+	text-align: center;
+}
+
+/* links */
+a, a:visited {
+	text-decoration: none;
+	color: #4F82CB; 
+	background: inherit;
+}
+a:hover {
+	color: #4EBF37;
+	background: inherit;
+}
+
+/* headers */
+h1, h2, h3 {
+	font-family: Tahoma, Verdana, 'Trebuchet MS', Sans-serif;
+	font-weight: Bold; 		
+}
+h1 {
+	font-size: 120%;	
+}
+h2 {
+	font-size: 110%;
+	text-transform: uppercase;
+	color: #88ac0b;
+}
+h3 {
+	font-size: 110%;
+	color: #666666; 
+}
+
+
+/* images */
+
+
+h1, h2, h3, p {
+	padding: 10px;		
+	margin: 0;
+	color: #333; 
+}
+
+h4 {
+	padding: 4px 0 0 10px;
+	color: #666666;
+	font-size: 12px; 
+}
+
+h5 {
+	padding: 10px 0 0 0px;
+	color: #666666;
+	font-size: 12px; 
+}
+
+ul, ol {
+	margin: 5px 20px;
+	padding: 0 20px;
+	/* color: red;  #88ac0b; */	
+}
+ul span, ol span {
+	color: #666666;
+}
+
+code {
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace ;
+  /* white-space: pre; */
+  background: #FAFAFA;
+  border: 1px solid #f2f2f2;  
+}
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+blockquote {
+	margin: 10px;
+ 	padding: 0 0 0 28px;  
+   border: 1px solid #f2f2f2; 
+  	background: #FAFAFA url(../img/quote.gif) no-repeat 5px 5px;    
+}
+
+/* form elements */
+form {
+	margin:10px; padding: 0 5px;
+	border: 1px solid #f2f2f2; 
+	background-color: #FAFAFA; 
+}
+label {
+	display:block;
+	font-weight:bold;
+	margin:5px 0;
+}
+input {
+	padding:2px;
+	border:1px solid #eee;
+	font: normal 1em Verdana, sans-serif;
+	color:#777;
+}
+textarea {
+	width:400px;
+	padding:2px;
+	font-family: Verdana, sans-serif;
+	border:1px solid #eee;
+	height:100px;
+	display:block;
+	color:#777;
+}
+input.button { 
+	margin: 0; 
+	font: bolder 12px Arial, Sans-serif; 
+	border: 1px solid red; 
+	padding: 2px 3px; 
+	background: #FFF;
+	color: #88ac0b;
+}
+
+/* search */
+form.search {
+	position: absolute;
+	top: 35px; right: 25px;
+	background: transparent;
+	border: none;	
+}	
+form.search input.textbox {
+	margin: 0; padding: 1px 2px;
+	width: 120px;
+	background: #FFF;
+	color: #333; 
+}
+form.search input.button {
+	background: #CCC url(../img/headerbg.gif) repeat-x;
+	color: #333;
+	border: none;	
+	width: 70px; height: 21px;
+}
+
+li, TD {
+color: #333; 
+}
+
+IMG {
+    border: 0;
+    }
+/********************************************
+   LAYOUT
+********************************************/ 
+#wrap {
+	width: 820px;
+	background: #CCC url(../img/content.jpg) repeat-y center top;
+	margin: 0 auto;
+	text-align: left;
+}
+#content-wrap {
+	clear: both;
+	width: 760px;
+	padding: 0; 
+	margin: 0 auto;
+}
+#header {
+	width: 820px;
+	position: relative;
+	height: 106px;
+	background: #CCC url(../img/header-becontent-2.jpg) no-repeat center top;
+	padding: 0;
+	font-size: 14px;
+	color: #FFF;
+}
+
+#header #mylogo {
+    /* width: 150px; */
+    float: left;
+    margin-left: 110px;
+    padding: 0px 0 0 0px;
+    text-align: center;
+}
+
+#header #mylogo h1 {
+    font: bolder 3.3em 'Trebuchet MS', Arial, Sans-serif;
+    letter-spacing: -2px;
+    color: #666;
+    line-height: 0em;
+    padding-top: 55px;
+}
+
+#header #mylogo h2 {
+    font: normal .85em 'Trebuchet MS', Arial, Sans-serif;
+	text-transform: none;
+	color: #666;
+}
+
+#header h1#logo-text {
+	position: absolute;
+	margin: 0; padding: 0 0 0 70px;
+	font: bolder 3.3em 'Trebuchet MS', Arial, Sans-serif;
+	letter-spacing: -2px;
+	color: #666;
+	text-transform: none;
+	
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 28px; left: 50px;	
+}
+#header h2#slogan {
+	position: absolute;
+	margin: 0; padding: 2px 0 0 0;
+	font: normal .85em 'Trebuchet MS', Arial, Sans-serif;
+	text-transform: none;
+	color: #666;
+	
+	/* change the values of top and left to adjust the position of the slogan*/
+	top: 74px; left: 119px;		
+}
+
+
+#header #headermenu {
+	position: relative;
+	left: 625px;
+	top: 30px;
+	width: 200px;
+	height: 90px;
+	font-size: 11px;
+	color: #666;
+	
+}
+
+#header #headermenu div {
+	width: 150px;
+	height: 17px;
+	background:  url("../img/bullet-becontent.gif") no-repeat left;	
+	padding-left: 10px;
+}
+
+#header #headermenu div:hover {
+	background:  url("../img/bullet-becontent-hover.gif") no-repeat left;	
+}
+
+#header #headermenu div A {
+	background: none;   
+}
+/* Menu */
+#menu {
+	text-align: right;
+	color: white;
+	clear: both;	
+	margin: 0; 
+	padding: 0 50px 0 0;
+	background: url(../img/menu5.jpg) repeat-y center top;	
+	font: bold 12px/26px Verdana, Arial, Tahoma, Sans-serif;
+	height: 26px;
+
+}
+
+#menu a {
+	font-weight: normal;
+	background: none;
+	color: white;
+}
+
+#menu a:hover {
+	color: orange;
+}
+
+#menu ul {
+	float: right;
+	list-style: none;
+	margin:0; padding: 0;
+
+}
+#menu ul li {
+	display: inline;
+}
+#menu ul li a {
+	display: block;
+	float: left;
+	padding: 0 8px;
+	color: #FFF;	
+	text-decoration: none;
+}
+#menu ul li a:hover {
+	background-color: #ECECEC;
+	color: #333;	
+}
+#menu ul li#current a {	
+	background-color: #FFF;
+	color: #333;
+}
+
+/* Main Column */
+#main {
+	float: right;
+	width: 555px;
+	padding: 0; margin: 0px;
+	min-height: 400px;
+	
+	
+	
+}
+
+#main-admin {
+	float: right;
+	width: 610px;
+	padding: 0; margin: 0;
+	min-height: 400px;
+}
+
+#main-admin form {
+	margin: 0px;
+	
+}
+
+#main h1, #main-admin h1 {
+	margin-top: 10px;
+	font: Bold 125% Verdana, 'Trebuchet MS', Sans-serif;
+	color: #88ac0b;
+	padding: 5px 0 5px 25px; 	
+	border-bottom: 1px solid #EFF0F1;
+	background: #FFF url(../img/square-green.png) no-repeat 3px 50%;	
+}
+
+
+
+.post-footer {
+	background-color: #FAFAFA;
+	padding: 5px; margin: 20px 10px 0 10px;
+	border: 1px solid #f2f2f2;
+	font-size: 95%;	
+}
+.post-footer .date {
+	background: url(../img/clock.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .comments {
+	background: url(../img/comment.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .readmore {
+	background: url(../img/page.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+
+/* Sidebar */	
+
+#sidebar {
+	float: left;
+	width: 200px;
+	padding: 0; 
+	margin: 0;	
+}	
+
+#sidebar-admin {
+	float: left;
+	width: 140px;
+	padding: 0; 
+	margin: 0;	
+	
+	
+}
+
+#sidebar h1, #sidebar-admin h1 {
+	margin-top: 10px;
+	padding: 5px 0 0px 10px; 
+	font: bold 1.0em Verdana, 'Trebuchet MS', Sans-serif;
+	color: #555;
+	
+}
+
+#sidebar .left-box {
+	margin: 10px 0 0px 0;
+	padding-top: 5px;	
+	background: white url(../img/bg_sidebar_200.gif) no-repeat top left;
+}
+
+#sidebar .left-box form {
+	background: none;
+	border: none;
+	margin-bottom:0; padding-bottom: 0;
+}
+
+#sidebar .left-box-bottom {
+	margin-top: -5px;
+	height: 9px;
+	width: 200px;
+	background: white url(../img/bg_sidebar_bottom_200.gif) no-repeat top left;
+}
+
+#sidebar ul.sidemenu {
+	list-style: none;
+	text-align: left;
+	margin: 3px 0 8px 0; 
+	padding: 0;
+	text-decoration: none;		
+	width: 160px;
+	
+}
+
+#sidebar ul.sidemenu li  {
+	padding: 2px 0 2px 7px;
+	margin: 0 2px;	
+}
+
+#sidebar ul {
+	list-style: none;
+	margin-left: 0px;
+	width: 160px;
+	
+	
+}
+
+#sidebar-admin ul {
+	margin-left: 0;
+	list-style: none;
+	padding-left: 2px;
+	width: 140px;
+}
+
+#sidebar ul li, #sidebar-admin ul li {
+	font-weight: bold;
+}
+
+#sidebar ul li A, #sidebar-admin ul li A {
+	font-weight: bold;
+}
+
+#sidebar ul ul {
+	width: 100px;
+	margin-left: 0px;
+}
+
+
+#sidebar ul ul li {
+	margin-left: 0px;
+}
+
+#sidebar-admin ul ul li {
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+#sidebar ul ul li A, #sidebar-admin ul ul li A {
+	font-weight: normal;
+}
+
+#sidebar ul.sidemenuprivate, #sidebar ul.sidemenuprivate {
+	list-style: none;
+	text-align: left;
+	margin: 3px 0 8px 0; padding: 0;
+	text-decoration: none;		
+}
+#sidebar ul.sidemenuprivate li, #sidebar ul.sidemenuprivate li {
+	border-bottom: 1px solid #EFF0F1;
+	/* background: url(../img/go.gif) no-repeat 5px 5px;	*/
+	padding: 2px 0 2px 5px;
+	margin: 0 2px;	
+}
+#sidebar ul.sidemenuprivate a, #sidebar ul.sidemenuprivate a {
+	font-weight: normal;
+	text-decoration: none;	
+	background-image: none;	
+}
+
+#sidebar #rss {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	padding: 5px 0 5px 0;
+}
+
+.rss {
+	width: 555px;
+	background: none url("../img/rss/bg_rss.gif") 0 0 no-repeat top;
+	margin: 3px 30px 0px 10px;
+	padding: 8px 0px 0 0;
+}
+
+.rss img {
+	padding-top: 10px;
+	padding-right: 15px;
+	
+	float: right;
+}
+
+.rss-bottom {
+	background: white url(../img/rss/bg_rss_bottom.gif) no-repeat top;
+	height: 9px;
+	width: 555px;
+	margin-left: 7px;
+}
+
+
+/* Footer */	
+#footer {
+	color: #666666;
+	background: #CCC url(../img/footer.jpg) no-repeat center top;
+	clear: both;
+	width: 820px;
+	height: 55px;
+	text-align: center;	
+	font-size: 92%;
+}
+#footer a { text-decoration: none; }
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right { text-align: right; }
+
+/* display and additional classes */
+.clear { clear: both; }
+.gray { color: #CCC; }
+.darkgray { color: #AAE; }
+
+
+#smallbox {
+	margin:0 10px 10px 0;
+	padding:10px;
+	color:#505050;
+	border:1px solid #c0c0c0;
+background-color:#fafbfc;
+	line-height:1.5em;
+	font-size:0.8em;
+	visibility: hidden;
+	position: absolute;
+	width: 190px;
+}
+
+.color_1 {
+	/*border-bottom: 1px solid #EEE;
+	border-left: 4px solid #EEE;*/
+	margin: 5px 0 5px;
+	width: 500px
+}
+
+.color_0 {
+	/* border-bottom: 1px solid #EEE;
+	border-left: 4px solid #EEE; */
+	margin: 5px 0 5px;
+}
+
+.smaller {
+	width: 10px;
+}

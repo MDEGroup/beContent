@@ -1,0 +1,931 @@
+/* 
+
+MESSAGE BOX
+
+This is outside the becontent DIV.
+
+*/
+.debug
+{
+	margin: 4px 50px 2px;
+	padding: 10px;
+	font-family: courier;
+	font-size: 10px;
+	border: 1px solid #808080;
+}
+TR.on
+{
+	background-color: #FFFFFF;
+}
+TR.off
+{
+	background-color: #FFFFE0;
+}
+#messagebox
+{
+	position: absolute;
+/*float:center;*/
+	width: 200px;
+	height: 0px;
+	top: 10px;
+	left: 10px;
+	z-index: 100;
+	visibility: hidden;
+}
+.defaultSkin IFRAME
+{
+	border: 0;
+}
+#message
+{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #808080;
+}
+.pointer
+{
+	cursor: pointer;
+}
+#messagebox .message_title
+{
+	padding: 2px 0px 0px;
+	font-family: "Trebuchet MS", Arial, Verdana, serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFA500;
+	text-align: center;
+}
+#messagebox TD.roundBox
+{
+	position: relative;
+	background-color: #FFFFFF;
+	width: 200px;
+	font-family: "Trebuchet MS", Arial, Verdana, serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #808080;
+	text-align: center;
+}
+#messagebox TD.uedge
+{
+	background-position: top;
+	background-image: url(../img/message_box/u.jpg);
+	background-repeat: repeat-x;
+	height: 26px;
+}
+#messagebox TD.redge
+{
+	background-image: url(../img/message_box/r.jpg);
+	background-position: top right;
+	background-repeat: repeat-y;
+}
+#messagebox TD.bedge
+{
+	background-image: url(../img/message_box/b.jpg);
+/*background-position: bottom left;*/
+	background-position: top;
+	background-repeat: repeat-x;
+}
+#messagebox TD.ledge
+{
+	background-image: url(../img/message_box/l.jpg);
+	background-repeat: repeat-y;
+}
+#messagebox TD.ulcorner
+{
+	background-image: url(../img/message_box/ul.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+#messagebox TD.urcorner
+{
+	background-image: url(../img/message_box/ur.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#messagebox TD.blcorner
+{
+	width: 23px;
+	height: 7px;
+	background-image: url(../img/message_box/ll.jpg);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+#messagebox TD.brcorner
+{
+	width: 23px;
+	height: 7px;
+	background-image: url(../img/message_box/lr.jpg);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+/* 
+
+REPORT
+
+This has been used until version 0.3.1 - its use is deprecated.
+
+*/
+.report
+{
+	border: 1px solid #CCCCFF;
+}
+.report TABLE
+{
+	width: 100%;
+}
+.form TD
+{
+/*white-space: no-wrap;*/
+}
+.report TH
+{
+	background-color: #EEEEFF;
+}
+.report TR#heading:hover
+{
+	color: #808080;
+	background-color: #EEEEFF;
+}
+.report TR:hover
+{
+	color: #808080;
+	background-color: #EEEEFF;
+	cursor: pointer;
+}
+.report TD
+{
+	border-top: 1px solid #C0C0C0;
+	padding: 3px;
+	margin: 0px;
+/*spacing: 0px;*/
+}
+/* 
+
+BECONTENT DIV
+
+This will contain the forms for
+
+1. ADD
+2. EDIT
+
+and refers exclusively to the CRUD operation. It includes also the liveReport DIV.
+
+
+
+*/
+#becontent TABLE
+{
+	width: auto;
+}
+#becontent FORM
+{
+/*width: 600px;*/
+	padding-bottom: 20px;
+}
+#becontent INPUT
+{
+	color: #808080;
+	padding: 4px 2px;
+	font-size: 1em;
+	border: 1px solid #CCC;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+#becontent INPUT:focus
+{
+	color: #000000;
+	padding: 4px 2px;
+	font-size: 1em;
+	border: 1px solid #FFA500;
+	background-color: #FFFFE0;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+#becontent SELECT.becontent
+{
+/*min-width: 150px;*/
+	min-width: 200px;
+	border: 1px solid #CCC;
+	padding: 2px;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+#becontent SELECT.becontent:focus
+{
+	min-width: 200px;
+	padding: 2px;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #FFA500;
+	background-color: #FFFFE0;
+}
+#becontent FIELDSET LEGEND
+{
+	color: #808080;
+}
+#becontent TEXTAREA
+{
+	font-size: 11px;
+	padding: 2px;
+	border: 1px solid #CCC;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	height: auto;
+	width: auto;
+}
+#becontent TEXTAREA:focus
+{
+	color: #000000;
+	font-size: 11px;
+	padding: 2px 3px 4px;
+	border: 1px solid #FFA500;
+	background-color: #FFFFE0;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+#becontent INPUT[type="checkbox"]
+{
+	border: 0;
+}
+#becontent LEGEND
+{
+	font-weight: bold;
+	padding: 0 5px;
+}
+#becontent FIELDSET
+{
+	padding: 5px;
+	line-height: 1.8em;
+	min-width: 480px;
+}
+#becontent .position
+{
+	width: 300px;
+}
+#becontent .position-button-up
+{
+	float: left;
+	margin: 5px 5px 5px 0px;
+	width: 32px;
+	height: 21px;
+	background: url(../img/position/button_up-new.jpg) no-repeat;
+}
+#becontent .position-button-up:active
+{
+	background: url(../img/position/button_up-hover-new.jpg) no-repeat;
+}
+#becontent .position-button-down
+{
+	float: left;
+	margin: 5px 0px;
+	width: 32px;
+	height: 21px;
+	background: url(../img/position/button_down-new.jpg) no-repeat;
+}
+#becontent .position-button-down:active
+{
+	background: url(../img/position/button_down-hover-new.jpg) no-repeat;
+}
+/*LIVE REPORT*/
+#becontent DIV.closing
+{
+	border: 1px solid #C0C0C0;
+	height: 32px;
+	background: #E2F5FB url(../img/beContent/form-bar.png) no-repeat left;
+	text-align: right;
+	margin-top: 10px;
+	padding: 8px 30px 0 0;
+}
+#becontent #liveReport
+{
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+#becontent #liveReport FORM
+{
+	margin: 0;
+	padding: 0;
+}
+#becontent #liveReport DIV.header
+{
+/*background: white url(../img/beContent/bg_report_top2.gif) repeat-x;
+border-top: 1px solid #BBB; !#6C7D8D;
+border-left: 1px solid #BBB;
+border-right: 1px solid #BBB;
+border-bottom: 1px solid #BBB;*/
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	height: 19px;
+	color: #3C474F;
+	font-size: 11px;
+	font-weight: bold;
+}
+#becontent #liveReport DIV.search
+{
+	background: #F0F3F6 url(../img/beContent/bg_report_top_search2.gif) repeat-x bottom;
+	height: 24px;
+	color: #000000;
+	text-align: left;
+	font-size: 11px;
+	font-family: tahoma, sans-serif;
+	padding-left: 5px;
+	border-top: 1px solid #BBB;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BACCD7;
+	border-left: 1px solid #BBB;
+}
+#becontent #liveReport DIV.search INPUT
+{
+	height: 16px;
+	width: 200px;
+	margin-top: 2px;
+	border: 1px solid #C0C0C0;
+	background: #FFFFFF url(../img/beContent/bg_report_input.gif) repeat-x;
+	padding: 2px 0 0 2px;
+}
+#becontent #liveReport DIV.search INPUT:focus
+{
+	border: 1px solid #C0C0C0;
+	background: #FFFFFF url(../img/beContent/bg_report_input.gif) repeat-x;
+}
+#becontent #liveReport DIV.button
+{
+	float: left;
+	width: 17px;
+	height: 19px;
+	border: 0;
+	border-bottom: 1px solid #C0C0C0;
+	background: #FFFFFF url(../img/beContent/search-trigger.gif) no-repeat;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.button-ie
+{
+	float: left;
+	width: 17px;
+	height: 19px;
+	border: 0;
+	border-bottom: 1px solid #C0C0C0;
+	background: #FFFFFF url(../img/beContent/search-trigger.gif) no-repeat;
+	margin-top: 3px;
+}
+#becontent #liveReport DIV.button:hover, #becontent #liveReport DIV.button-ie:hover
+{
+	border-bottom: 1px solid #7EADD9;
+	background: #FFFFFF url(../img/beContent/search-trigger.gif) no-repeat -17px 0px;
+}
+#becontent #liveReport DIV.button:active
+{
+	border-bottom: 1px solid #7EADD9;
+	background: #FFFFFF url(../img/beContent/search-trigger.gif) no-repeat -34px 0px;
+}
+#becontent #liveReport DIV.button-ie-active
+{
+	float: left;
+	width: 17px;
+	height: 19px;
+	border: 0;
+	border-bottom: 1px solid #7EADD9;
+	background: #FFFFFF url(../img/beContent/search-trigger.gif) no-repeat -34px 0px;
+	margin-top: 3px;
+}
+#becontent #liveReport DIV.searchfield
+{
+	float: left;
+}
+#becontent #liveReport DIV.body
+{
+	text-align: left;
+	width: auto;
+	height: 500px;
+/*pager height !!!*/
+	overflow: auto;
+	border-top: 0px solid #BBB;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BACCD7;
+	border-left: 1px solid #BBB;
+}
+#becontent #liveReport DIV.body A
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+#becontent #liveReport DIV.body A:hover
+{
+	text-decoration: underline;
+}
+#becontent #liveReport DIV.body DIV.row
+{
+	min-height: 30px;
+	width: 100%;
+	margin: 0px;
+	padding: 2px 0 5px;
+}
+#becontent #liveReport #ajax-report DIV.row
+{
+	padding: 5px 0 5px 3px;
+	width: 583px;
+}
+#becontent #liveReport DIV.body DIV.new
+{
+	font-weight: bold;
+}
+#becontent #liveReport DIV.body DIV.not_new
+{
+	font-weight: normal;
+}
+#becontent #liveReport #ajax-report HR
+{
+	color: #DDD;
+	background-color: #DDD;
+	border: 0px solid #000000;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
+#becontent #liveReport DIV.body DIV.row DIV.item
+{
+	width: 450px;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+#becontent #liveReport DIV.body DIV.row DIV.owner
+{
+	position: relative;
+	float: right;
+	width: 120px;
+	margin: 0;
+	padding: 0;
+}
+#becontent #liveReport DIV.body SPAN.info
+{
+/*color: #aaa;*/
+}
+#becontent #liveReport DIV.body HR
+{
+	color: #FFFFFF;
+/*!#DDD;*/
+	background-color: #FFFFFF;
+/*!#DDD;*/
+	border: 0px solid #000000;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
+#becontent #liveReport DIV.bottom
+{
+	background: #FFFFFF url(../img/beContent/bg_report_top_search.gif) repeat-x;
+	height: 21px;
+	color: #000000;
+	text-align: left;
+	font-size: 11px;
+	font-family: tahoma, sans-serif;
+	padding-top: 3px;
+	padding-left: 5px;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #BBB;
+/*!#6C7D8D;*/
+	border-right-color: #BBB;
+/*!#6C7D8D;*/
+	border-bottom-color: #BBB;
+/*!#6C7D8D;*/
+	border-left-color: #BBB;
+/*!#6C7D8D;*/
+}
+#becontent #liveReport DIV.bottom .first-page
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-first.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .first-page:hover
+{
+	background: url(../img/beContent/page-first-over.gif) no-repeat;
+}
+#becontent #liveReport DIV.bottom .first-page-disabled
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-first-disabled.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .prev-page
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-prev.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .prev-page:hover
+{
+	background: url(../img/beContent/page-prev-over.gif) no-repeat;
+}
+#becontent #liveReport DIV.bottom .prev-page-disabled
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-prev-disabled.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .last-page
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-last.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .last-page:hover
+{
+	background: url(../img/beContent/page-last-over.gif) no-repeat;
+}
+#becontent #liveReport DIV.bottom .last-page-disabled
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-last-disabled.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .next-page
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-next.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .next-page:hover
+{
+	background: url(../img/beContent/page-next-over.gif) no-repeat;
+}
+#becontent #liveReport DIV.bottom .next-page-disabled
+{
+	width: 16px;
+	height: 16px;
+	background: url(../img/beContent/page-next-disabled.gif) no-repeat;
+	border: 0;
+	float: left;
+	padding-right: 3px;
+	margin-top: 2px;
+}
+#becontent #liveReport DIV.bottom .pageselector
+{
+	float: left;
+	padding: 0px 5px;
+}
+#becontent #liveReport DIV.bottom FORM
+{
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+#becontent #liveReport DIV.bottom .pageselector
+{
+	width: 100px;
+}
+#becontent #liveReport DIV.bottom .pageselector INPUT
+{
+	height: 16px;
+	width: 30px;
+	padding: 0px;
+}
+#becontent #liveReport DIV.bottom .pageselector INPUT:focus
+{
+	border: 1px solid #C0C0C0;
+}
+#becontent #liveReport DIV.bottom .separator
+{
+	height: 13px;
+	border-left: 1px solid #9AC6FF;
+	border-right: 1px solid #FFFFFF;
+	float: left;
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+#becontent #liveReport DIV.bottom .loader
+{
+	padding-left: 5px;
+	float: left;
+}
+#becontent #liveReport DIV.bottom .topic
+{
+	padding-right: 7px;
+	padding-top: 2px;
+	float: right;
+	color: #444;
+}
+#becontent #liveReport DIV.bottom #liveReport_loader
+{
+	float: left;
+	height: 18px;
+	width: 20px;
+	margin-top: 1px;
+	background: url(../img/beContent/done-2.gif) no-repeat;
+}
+#becontent #liveReport DIV.body DIV.color_1
+{
+	background-color: #8F8;
+}
+#becontent #liveReport DIV.body DIV.color_2
+{
+	background-color: #BFB;
+}
+#becontent #liveReport DIV.body DIV.color_3
+{
+	background-color: #DFD;
+}
+#becontent #liveReport SPAN.provincia_1
+{
+	background-color: #FF0000;
+	color: #FFFFFF;
+}
+#becontent #liveReport SPAN.provincia_2
+{
+	background-color: #0000FF;
+	color: #FFFFFF;
+}
+#becontent #liveReport SPAN.provincia_3
+{
+	color: #800080;
+}
+#becontent #liveReport SPAN.provincia_4
+{
+	color: #808080;
+}
+#becontent #liveReport DIV.body DIV.color_1_1
+{
+	background-color: #8F8;
+}
+#becontent #liveReport DIV.body DIV.color_2_1
+{
+	background-color: #BFB;
+}
+#becontent #liveReport DIV.body DIV.color_3_1
+{
+	background-color: #DFD;
+}
+#becontent #liveReport DIV.body DIV.color_1_2
+{
+	background-color: #F88;
+}
+#becontent #liveReport DIV.body DIV.color_2_2
+{
+	background-color: #FBB;
+}
+#becontent #liveReport DIV.body DIV.color_3_2
+{
+	background-color: #FDD;
+}
+#becontent #liveReport DIV.body DIV.color_1_3
+{
+	background-color: #88F;
+}
+#becontent #liveReport DIV.body DIV.color_2_3
+{
+	background-color: #BBF;
+}
+#becontent #liveReport DIV.body DIV.color_3_3
+{
+	background-color: #DDF;
+}
+#becontent #liveReport DIV.body DIV.color_1_4
+{
+	background-color: #F8F;
+}
+#becontent #liveReport DIV.body DIV.color_2_4
+{
+	background-color: #FBF;
+}
+#becontent #liveReport DIV.body DIV.color_3_4
+{
+	background-color: #FDF;
+}
+#becontent #liveReport DIV.body DIV.color_header
+{
+	background-color: #77899A;
+	color: #99C;
+}
+#becontent DIV.warning
+{
+/*color: #6b5736;*/
+	width: 650px;
+	border: 1px solid #EAEAEA;
+	background: #F1F1F1 url(../img/beContent/warning-terrae.jpg) no-repeat right bottom;
+	margin: 20px 20px 5px;
+	padding: 10px 20px;
+}
+#becontent DIV.warning P
+{
+	width: 450px;
+	padding-left: 0;
+}
+#becontent DIV.warning H1
+{
+	background: none;
+	border: none;
+	padding-left: 0;
+}
+/*CALENDAR
+the div that holds the date picker calendar*/
+.dpDiv
+{
+	width: 200px;
+}
+.dpDiv BUTTON
+{
+	border: 1px solid #CCC;
+	background-color: #DDD;
+	color: #AAA;
+}
+/*the table (within the div) that holds the date picker calendar*/
+.dpTable
+{
+	font-family: verdana, tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #505050;
+	background-color: #ECE9D8;
+	border: 1px solid #AAAAAA;
+	line-height: 1em;
+}
+.dpTable TR TD
+{
+	padding: 0px;
+	margin: 0px;
+}
+/*a table row that holds date numbers (either blank or 1-31)*/
+.dpTR
+{
+	padding: 0px;
+	margin: 0px;
+}
+/*the top table row that holds the month, year, and forward/backward buttons*/
+.dpTitleTR
+{
+}
+/*the second table row, that holds the names of days of the week (Mo, Tu, We, etc.)*/
+.dpDayTR
+{
+	padding: 0px;
+	margin: 0px;
+}
+/*the bottom table row, that has the "This Month" and "Close" buttons*/
+.dpTodayButtonTR
+{
+	padding: 0px;
+	margin: 0px;
+}
+/*a table cell that holds a date number (either blank or 1-31)*/
+.dpTD
+{
+	border: 1px solid #ECE9D8;
+	padding: 0px;
+	margin: 0px;
+}
+/*a table cell that holds a highlighted day (usually either today's date or the current date field value)*/
+.dpDayHighlightTD
+{
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+}
+/*the date number table cell that the mouse pointer is currently over (you can use contrasting colors to make it apparent which cell is being hovered over)*/
+.dpTDHover
+{
+	background-color: #ACA998;
+	border: 1px solid #888888;
+	cursor: pointer;
+	color: #FF0000;
+}
+/*the table cell that holds the name of the month and the year*/
+.dpTitleTD
+{
+}
+/*a table cell that holds one of the forward/backward buttons*/
+.dpButtonTD
+{
+}
+/*the table cell that holds the "This Month" or "Close" button at the bottom*/
+.dpTodayButtonTD
+{
+}
+/*a table cell that holds the names of days of the week (Mo, Tu, We, etc.)*/
+.dpDayTD
+{
+	background-color: #CCCCCC;
+	border: 1px solid #AAAAAA;
+	color: #FFFFFF;
+}
+/*additional style information for the text that indicates the month and year*/
+.dpTitleText
+{
+	font-size: 11px;
+	color: #808080;
+	font-weight: bold;
+}
+/*additional style information for the cell that holds a highlighted day (usually either today's date or the current date field value)*/
+.dpDayHighlight
+{
+	color: #4060FF;
+	font-weight: bold;
+}
+/*the forward/backward buttons at the top*/
+.dpButton
+{
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #808080;
+	width: 20px;
+	background: #D8E8FF;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
+}
+/*the "This Month" and "Close" buttons at the bottom*/
+.dpTodayButton
+{
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #808080;
+	background: #D8E8FF;
+	font-weight: bold;
+}
+DIV.image-show
+{
+	text-align: left;
+	width: auto;
+	float: left;
+	margin-left: 10px;
+	background-color: #FFFFFF;
+}
+DIV.image-show INPUT.file
+{
+	height: 12px;
+	font-size: 10px;
+	border-left: 1px solid #D4D4D4;
+	border-top: 1px solid #D4D4D4;
+	border-bottom: 1px solid #D4D4D4;
+	border-right: 0;
+	width: 170px;
+	margin-bottom: 2px;
+}
+DIV.image-show IMG
+{
+	vertical-align: top;
+	margin-top: 0px;
+}
+DIV.image-show .left
+{
+	float: left;
+}
+DIV.image-show DIV
+{
+	position: absolute;
+	z-index: 100;
+	width: 186px;
+	visibility: hidden;
+	border-bottom: 2px solid #D4D4D4;
+	border-left: 2px solid #D4D4D4;
+	border-right: 2px solid #D4D4D4;
+	border-top: 1px solid #D4D4D4;
+	background-color: #D4D4D4;
+	line-height: 18px;
+}
+DIV.image-show .file_delete
+{
+	margin-left: 20px;
+}
+DIV.image-show DIV SPAN
+{
+	padding: 2px;
+}
+DIV.image-show SPAN.delete
+{
+}

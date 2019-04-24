@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8859" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+<title>Terraemotus - il luogo del ricordo</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+
+
+<link href="skins/<[skin]>/css/<[stylesheet]>.css" rel="stylesheet" type="text/css" />
+
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+
+
+<script type="text/javascript" src="skins/<[skin]>/js/jquery.js"></script>
+<script type="text/javascript" src="skins/<[skin]>/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="skins/<[skin]>/js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="skins/<[skin]>/js/js.js"></script>
+<script type="text/javascript" src="skins/<[skin]>/js/easySlider1.7.js"></script>
+
+<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, 
+				continuous: true,
+				numeric: true,
+				speed: 500,
+				pause: 5000
+			});
+		});	
+	</script>
+    
+    
+    
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:300});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:160});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'50px'},{queue:false,duration:400});
+				}, function() {
+					$(".cover", this).stop().animate({top:'260px'},{queue:false,duration:900});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'80px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'220px'},{queue:false,duration:160});
+				});
+			});
+		</script>
+
+
+<!--[if IE 6]>
+    <link href="skins/<[skin]>/css/<[stylesheet]>_ie6.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="skins/<[skin]>/js/unitpngfix.js"></script>
+<![endif]-->
+
+
+<!--[if IE 7]>
+    <link href="skins/<[skin]>/css/<[stylesheet]>_ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+
+<body>
+
+<!-- CENTERCOLUMN -->
+<div id="centerColumn">
+
+
+<!-- HEADER -->
+<div id="header">
+
+<!-- LOGO -->
+<div id="logo">
+
+</div><!-- END OF LOGO -->
+
+
+<!-- NAVIGATION BAR-->
+    <div id="nav">
+        <!-- INIZIO -->
+            <[menu::menu parent="18" depth="1" class="lavaLamp" id="menu" current="true" library="hiermenu"]>
+        <!-- FINE -->
+    
+    
+      
+    
+    </div><!-- END OF NAVIGATION BAR-->
+
+</div><!-- END OF HEADER -->
+
+<[body]>
+
+
+
+</div><!-- END OF CENTER_COLUMN -->
+
+
+
+
+<!-- FOOTER -->
+<div id="footer">
+
+
+<!-- BOTTOM_NAV -->
+<div id="bottom_nav">
+
+<!-- NAV_CONTAINER1 -->
+<div id="nav_container1">
+
+<[naviga_il_sito::menu parent="21" depth="1" library="hiermenu"]>
+<!-- <ul>
+        <li><a  class="active" href="index.html">home</a></li>
+        <li><a href="about.html">chi siamo</a></li>
+        <li><a href="portfolio.html">progetto</a></li>
+        <li><a href="services.html">privacy</a></li>
+        <li><a href="contact.html">contatti</a></li>
+</ul> -->
+
+</div><!-- END OF NAV_CONTAINER1 -->
+
+
+
+
+
+<!-- NAV_CONTAINER2 -->
+<div id="nav_container2">
+
+
+<[collaborazioni::menu parent="22" depth="1" library="hiermenu"]>
+<!-- <ul>
+
+<li style="bottom"><a href="#">Protezione Civile</a></li>
+<li class="bottom"><a href="#">Comune dell'Aquila</a></li>
+<li class="bottom"><a href="#">Becontent</a></li>
+<li class="bottom"><a href="#">Link 4</a></li>
+<li class="bottom"><a href="#">Link 5</a></li>
+
+</ul> -->
+
+
+
+
+</div><!-- END OF NAV_CONTAINER2 -->
+
+
+
+
+
+
+
+<!-- NAV_CONTAINER3 -->
+<div id="nav_container3">
+
+<div class="socialright">
+
+<a href="#"><img src="skins/<[skin]>/img/facebook.png" alt="Facebook" /></a><a href="#"><img src="skins/<[skin]>/img/digg.png" alt="digg" /></a><a href="#"><img src="skins/<[skin]>/img/rss.png" alt="rss" /></a><a href="#"><img src="skins/<[skin]>/img/flickr.png" alt="flickr" /></a></div>
+
+</div><!-- END OF SOCIAL BAR -->
+
+
+
+
+
+</div><!-- END OF NAV_CONTAINER3 -->
+
+</div><!-- END OF BOTTOM_NAV -->
+  
+   
+
+  
+</div><!-- END OF FOOTER -->
+
+
+
+</body>
+</html>

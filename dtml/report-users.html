@@ -1,0 +1,18 @@
+<div id="ajax-report">
+	<[foreach]>
+	<form name="item_<[username]>">
+	<input type="hidden" name="update" value="true">
+	<input type="hidden" name="value" value="<[username]>">
+	<div class="row">
+		<div style="float: left; height: 30px;padding-right: 5px;">
+			<input type="checkbox" name="active" value="*" <[active]> onchange="liveReport_updateitem('<[username]>');">	
+		</div>
+		<div class="item">
+			<a href="<[script]>?action=edit&page=1&value=<[username]>"><[name]> <[surname]></a><br />
+			<span class="info"><[username]> | <[email]> </span>
+		</div>
+	</div>
+	</form>
+	<hr>
+	<[/foreach]>
+</div>

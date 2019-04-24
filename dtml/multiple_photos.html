@@ -1,0 +1,25 @@
+
+<h1>Galleries</h1>
+
+<p>
+<table>
+<[foreach]>
+    <tr>
+        <td colspan=2>
+            <h2><[gallery]></h2>
+            <p><[gallery_description]></p>
+            <br/>
+        </td>
+    </tr>
+    <[foreach]>
+    <tr>
+	   <td width=130><p><a href="photos.php?id=<[id]>"><img align="left" src="show.php?token=5ab7c68a349deff4f786e916eaff0051&id=<[id]>&width=130"></a></p></td>
+	   <td valign="top">
+	   <h4><[title]></h4>
+	   <p><[description]> ...</p>
+	   </td>
+    </tr>					  
+    <[/foreach]>
+<[/foreach]>
+</table>
+</p>

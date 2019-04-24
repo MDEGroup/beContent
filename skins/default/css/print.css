@@ -1,0 +1,27 @@
+#container {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#main {
+	min-height: 0px;
+}
+
+#header form, #menu, #bar, #innerbox, #news ul, #mainlow, #utilities, #login, #footer img {
+	display: none;
+	visibility: hidden;
+	height: 0px;
+}
+
+#header {
+	border: 1px solid red;
+	background: url(../img/logo.jpg) 20px 0% no-repeat;
+	height: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+

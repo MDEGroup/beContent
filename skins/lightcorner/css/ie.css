@@ -1,0 +1,5 @@
+/* IE PNGFIX */
+
+img, div, a{
+	behavior: url('iepngfix.htc')
+}

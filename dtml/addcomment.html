@@ -1,0 +1,65 @@
+<script>
+function comment_submit() {
+	var form = document.forms['comment'];
+	
+	
+	if (form.body.value == "") {
+		alert('<[message]>');
+		
+		return;
+	}
+	
+	form.submit();
+}
+
+function opencomment() {
+	var obj = document.getElementById('addcomment-wrap');
+	var form = document.forms['comment'];
+	
+	if (obj.style.visibility == 'visible') {
+		obj.style.visibility = 'hidden';
+		obj.style.height = '0px';
+	} else {
+		
+		obj.style.height = '180px';
+		obj.style.visibility = 'visible';
+		form.body.focus();
+	}
+	
+}
+
+function check_message() {
+	var obj = document.getElementById('addcomment-notify-inner');
+	var wrap = document.getElementById('addcomment-notify');
+	
+	if (obj.innerHTML != "") {
+		wrap.style.visibility = 'visible';
+		wrap.style.height = '80px';
+	}
+}
+
+function close_notify() {
+	var wrap = document.getElementById('addcomment-notify');
+	
+	wrap.style.visibility = 'hidden';
+	wrap.style.height = '0px';
+}
+</script>
+<a class="blog" href="javascript:opencomment();">commenta</a>
+<div id="addcomment-notify">
+	<a href="javascript:close_notify();"><img src="img/beContent/close.jpg"></a>
+	<div id="addcomment-notify-inner"><[notify]></div>
+</div>
+<div id="addcomment-wrap">
+	<form name="comment" method="post">
+
+	<input type="hidden" name="id" value="<[id]>">
+	<input type="hidden" name="action_comment" value="add">
+	<a href="javascript:opencomment();"><img src="img/beContent/close.jpg"></a>
+	<div>
+		<textarea name="body"></textarea><br />
+		<button onclick="comment_submit();return false;" style="margin-right: 17px;"><[button]></button>
+	</div>
+	</form>
+</div>
+<script>check_message();</script>

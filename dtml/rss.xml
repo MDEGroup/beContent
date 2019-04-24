@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="2.0">
+<channel>
+<title><[title]></title>
+<link><[link]></link>
+<description><[description]></description>
+<language><[language]></language>
+<generator>beContent</generator>
+<lastBuildDate><[lastBuildDate]></lastBuildDate>
+<managingEditor><[managingEditor]></managingEditor>
+<webMaster><[webMaster]></webMaster>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs><image><url><[image_url]></url><title><[image_title]></title><link><[image_link]></link><width><[image_width]></width><height><[image_height]></height></image>
+
+<[foreach]>
+<item>
+<title><[item_title]></title>
+<link><[item_link]></link>
+<pubDate><[item_pubDate]></pubDate>
+<guid isPermaLink='false'><[item_link]></guid>
+<description> <![CDATA[<[item_description]>]]> </description>
+</item>
+<[/foreach]>
+
+</channel>
+</rss>

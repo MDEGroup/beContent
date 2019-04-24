@@ -1,0 +1,138 @@
+body {
+	background: #222222; 
+}
+
+div#top {
+	background: url('../imgs/dark/top_background.png') no-repeat;
+}
+
+body#subpage div#top {
+	background: url('../imgs/dark/top_background_subpage.png') no-repeat;
+}
+
+body#homepage div#main {
+	background: url('../imgs/dark/main_background.png') no-repeat;
+}
+
+body#subpage div#main {
+	background: url('../imgs/dark/main_background_subpage.png') repeat-y;
+}
+
+div.box {
+	border-right: 1px solid #353535;
+	color: #6d6d6d;
+}
+
+div.bright {
+	border-right: none;
+}
+
+div.box div.image {
+	background: url('../imgs/dark/homepage_img_background.png');
+}
+
+div#clients {
+	background: url('../imgs/dark/clients_background.png') no-repeat;
+}
+
+div#bottom {
+	background: url('../imgs/dark/main_background_bottom.png') no-repeat;	
+}
+
+div#footer {
+	border-top: 1px solid #353535;
+	color: #6d6d6d;
+}
+
+/* TITLES */
+
+h1 {
+	color: #222222;
+}
+
+h3 {
+	color: #3b3b3b;
+}
+
+body#homepage h3 {
+	margin-top: 0px;
+	color: #b8b8b8;
+}
+
+div#clients h3 {
+	color: #3b3b3b;
+}
+
+/* HYPERLINKS */
+
+a {
+	color: #686868;
+}
+
+div#footer a {
+	color: #6d6d6d;
+}
+
+a.readmore {
+	background: url('../imgs/dark/button_read_more_01.png') no-repeat;
+}
+
+a.readmore:hover {
+	background: url('../imgs/dark/button_read_more_02.png') no-repeat;
+}
+
+a.signup {
+	background: url('../imgs/dark/button_sign_up_01.png') no-repeat;
+}
+
+a.signup:hover {
+	background: url('../imgs/dark/button_sign_up_02.png') no-repeat;
+}
+
+a.learnmore {
+	background: url('../imgs/dark/button_learn_more_01.png') no-repeat;
+}
+
+a.learnmore:hover {
+	background: url('../imgs/dark/button_learn_more_02.png') no-repeat;
+}
+
+/* NAVIGATION */
+
+div#navigation a {
+	background: url("../imgs/dark/navigation/normal_left.png") no-repeat left top;
+}
+	
+#navigation a span {
+	color: #969da1;
+	background: url("../imgs/dark/navigation/normal_right.png") no-repeat right top;
+}
+	
+#navigation li.current a {
+	background: url("../imgs/dark/navigation/active_left.png") no-repeat left top;
+}
+	
+#navigation li.current a span {
+	background: url("../imgs/dark/navigation/active_right.png") no-repeat right top;
+	color: #707477;
+}
+
+#navigation a:hover {
+	height: 33px;
+	background: url("../imgs/dark/navigation/active_left.png") no-repeat left top;
+	top: 2px;
+}
+
+#navigation a:hover span {
+	height: 33px;
+	background: url("../imgs/dark/navigation/active_right.png") no-repeat right top;
+	color: #707477;
+}
+
+#navigation li.rss a {
+	background: url("../imgs/dark/navigation/rss_normal.png") no-repeat left top;
+}
+
+#navigation li.rss a:hover {
+	background: url("../imgs/dark/navigation/rss_active.png") no-repeat left top;
+}

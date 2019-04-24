@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+<title>Modern Business 3 - Welcome</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+
+<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, 
+				continuous: true,
+				numeric: true,
+				speed: 500,
+				pause: 5000
+			});
+		});	
+	</script>
+    
+    
+    
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:300});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:160});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'50px'},{queue:false,duration:400});
+				}, function() {
+					$(".cover", this).stop().animate({top:'260px'},{queue:false,duration:900});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'80px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'220px'},{queue:false,duration:160});
+				});
+			});
+		</script>
+
+
+<!--[if IE 6]>
+    <link href="css/main_ie6.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/unitpngfix.js"></script>
+<![endif]-->
+
+
+<!--[if IE 7]>
+    <link href="css/main_ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+
+<body>
+
+<!-- CENTERCOLUMN -->
+<div id="centerColumn">
+
+
+<!-- HEADER -->
+<div id="header">
+
+<!-- LOGO -->
+<div id="logo">
+
+</div><!-- END OF LOGO -->
+
+
+<!-- NAVIGATION BAR-->
+    <div id="nav">
+    
+      <ul class="lavaLamp" id="menu">
+        <li class="current"><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    
+    </div><!-- END OF NAVIGATION BAR-->
+
+</div><!-- END OF HEADER -->
+
+
+
+<!-- SPLASH -->
+<div id="splash">
+
+
+<div id="slider">
+			<ul>				
+				<li><a href="#"><img src="img/splash.png" alt="alt text goes here" /></a></li>
+				<li><a href="#"><img src="img/splash1.png" alt="alt text goes here" /></a></li>
+				<li><a href="#"><img src="img/splash2.png" alt="alt text goes here" /></a></li>		
+			</ul>
+		</div><!-- End OF SLIDER -->
+
+
+
+</div><!-- End OF SPLASH -->
+
+
+<!-- CONTENT_AREA -->
+<div id="content_area">
+
+
+		<!-- THIS IS GALLERY THUMB #1 TAB WITH ROLLOVER -->
+	<div id="tab1_container">
+      <div class="boxgrid captionfull">
+			  <a href="#"><img src="img/tab1.png" width="298" height="129" alt="portraits gallery"/></a>
+			  <div class="cover boxcaption">
+					<p><a href="portfolio.html">retium ut rhoncus purus lacinia. Nulla egestas, elit ac blandit ultrices, lorem </a></p>
+		</div>		
+	  </div>
+    </div>
+
+
+        
+        
+		<!-- THIS IS GALLERY THUMB #2 TAB WITH ROLLOVER -->
+	<div id="tab2_container">
+    <div class="boxgrid captionfull">
+				<a href="#"><img src="img/tab2.png" width="298" height="129" alt="wedding gallery"/></a>
+				<div class="cover boxcaption">
+					<p><a href="weddings.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor arcu id nibid</a></p>
+				</div>		
+	</div>
+    </div>
+        
+        
+		<!-- THIS IS GALLERY THUMB #3 TAB WITH ROLLOVER -->
+	<div id="tab3_container">
+    <div class="boxgrid captionfull">
+				<a href="#"><img src="img/tab3.png" width="298" height="129" alt="scenic gallery"/></a>
+				<div class="cover boxcaption">
+					<p><a href="scenic.html">pretium ut rhoncus purus lacinia. Nulla egestas, elit ac blandit ultrices, lorem </a></p>
+				</div>		
+	</div>
+    </div>
+
+
+
+
+</div><!-- End OF CONTENT_AREA -->
+
+
+
+
+
+<div class="social">
+
+<div class="subnews">
+<h2>Titolo news 1 su una riga</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor arcu id nibid Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor arcu id nibid...</p>
+</div>
+
+<div class="subnews">
+<h2>Titolo news 2 su una riga...</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor arcu id nibid Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor arcu id nibid...</p>
+</div>
+
+<div class="subnews last">
+<h2>Titolo news 3 su una riga...</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor arcu id nibid Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor arcu id nibid...</p>
+</div>
+<!-- SOCIAL BAR 
+<div class="socialleft">
+
+<!-- TWITTER CONTAINER -->
+<div id="twitter_div">
+<ul id="twitter_update_list"><li></li></ul>
+</div>
+
+</div>
+
+<div class="socialright">
+
+<a href="#"><img src="img/facebook.png" alt="Facebook" /></a><a href="#"><img src="img/digg.png" alt="digg" /></a><a href="#"><img src="img/rss.png" alt="rss" /></a><a href="#"><img src="img/flickr.png" alt="flickr" /></a></div>
+ -->
+</div><!-- END OF SOCIAL BAR -->
+
+
+</div><!-- END OF CENTER_COLUMN -->
+
+
+
+
+<!-- FOOTER -->
+<div id="footer">
+
+
+<!-- BOTTOM_NAV -->
+<div id="bottom_nav">
+
+<!-- NAV_CONTAINER1 -->
+<div id="nav_container1">
+
+<ul>
+        <li><a  class="active" href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="contact.html">contact</a></li>
+</ul>
+
+</div><!-- END OF NAV_CONTAINER1 -->
+
+
+
+
+
+<!-- NAV_CONTAINER2 -->
+<div id="nav_container2">
+
+
+
+<ul>
+
+<li style="bottom"><a href="#">ThemeForest</a></li>
+<li class="bottom"><a href="#">GraphicRiver</a></li>
+<li class="bottom"><a href="#">VideoHive</a></li>
+<li class="bottom"><a href="#">FlashDen</a></li>
+<li class="bottom"><a href="#">Envato</a></li>
+
+
+</ul>
+
+
+
+
+</div><!-- END OF NAV_CONTAINER2 -->
+
+
+
+
+
+
+
+<!-- NAV_CONTAINER3 -->
+<div id="nav_container3">
+
+<a href="contact.html"><img src="img/available.jpg" alt="availability" border="0" /></a>
+
+<br />
+
+<a href="contact.html"><img src="img/contact.jpg" alt="Contact us" border="0" /></a>
+
+<br />
+
+<span class="copyright">This site is Copyright 2009 Jonathan Photography</span>
+
+
+</div><!-- END OF NAV_CONTAINER3 -->
+
+</div><!-- END OF BOTTOM_NAV -->
+  
+   
+
+  
+</div><!-- END OF FOOTER -->
+
+<!-- TWITTER CODE -->
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/twsjonathan.json?callback=twitterCallback2&amp;count=1"></script>
+
+
+</body>
+</html>
